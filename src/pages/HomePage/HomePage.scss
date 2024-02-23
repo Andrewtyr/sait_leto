@@ -24,11 +24,17 @@ body {
 
 
 // HomePage.scss
+// серый цвет возле слайдера 
 .bg-custom-gray {
   background-color: rgba(164, 163, 163, 0.25) !important;
   height: 400px;
+  width: 400px;
 }
-
+.main-container {
+  // Ширина контейнера для всех контейнеров на странице
+  max-width: 1200px; // Измените на нужную вам ширину
+  margin: 0 auto; // Центрирует контейнер по горизонтали
+}
 // Добавим стили для мобильных устройств
 @media (max-width: 767px) {
   .bg-custom-gray {

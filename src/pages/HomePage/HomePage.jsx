@@ -11,31 +11,31 @@ import './HomePage.scss';
 
 function HomePage() {
   return (
-    <Container>
+    <Container fluid className="main-container">
       {/* Навигация */}
       <Row>
-        <Col className="bg-custom-white">
+        <Col className="border-0">
           <MyNavbar />
         </Col>
       </Row>
 
       {/* Увеличенный отступ между навигацией и слайдером */}
       <Row className="mt-3">
-        <Col xs={12} className="bg-custom-gray d-flex justify-content-center align-items-center">
-          <MySlider />
+        <Col className="bg-custom-gray d-flex justify-content-center align-items-center border-0 custom-slider-container">
+          <MySlider   />
         </Col>
       </Row>
 
       {/* Контейнер для AboutMeBlock */}
       <Row>
-        <Col>
+        <Col className="border-0" style={{ paddingLeft: '0px', paddingRight: '0px', margin: '0px !important' }}>
           <AboutMeBlock />
         </Col>
       </Row>
 
       {/* Контейнер для InfoBlock */}
       <Row>
-        <Col>
+        <Col className="border-0">
           <InfoBlock />
         </Col>
       </Row>

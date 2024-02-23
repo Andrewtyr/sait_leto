@@ -7,12 +7,12 @@ import './AboutMeBlock.scss';
 
 function AboutMeBlock() {
   return (
-    <Card>
+    <Card className="border-0">
       <Card.Body>
-        <Card.Title className="text-center">Обо мне</Card.Title>
-        <Row>
+      <Card.Title className="text-center" style={{ fontSize: '40px', fontStyle: 'italic', marginBottom: '50px' }}>Обо мне</Card.Title>        
+        <Row className="top-container">
           {/* Левый контейнер с картинкой */}
-          <Col md={6}>
+          <Col md={6}className="border-0" style={{ paddingLeft: '0px',}}>
             <img
               src={process.env.PUBLIC_URL + '/images/моя фотка.png'}
               alt="Картинка"
@@ -20,7 +20,7 @@ function AboutMeBlock() {
             />
           </Col>
           {/* Правый контейнер с текстом */}
-          <Col md={6}>
+          <Col md={6} className="border-0" style={{ paddingLeft: '0px',  }}>
             <Card.Text>
               Учусь в политехе, пытаюсь делать практику, смотрю сериалы, читаю книги, пишу разные заметки о том что прийдет в голову, и этот сайт поможет узнать меня немного лучше, здесь я собрал то что мне нравится и кое-какие мои мысли, ну и галерею любимых фото и  просто обоев на рабочий стол, а также оставил способ связаться со мной 
             </Card.Text>
@@ -28,9 +28,9 @@ function AboutMeBlock() {
         </Row>
 
         {/* Контейнер с 2 фотографиями сверху и 2 текстами снизу */}
-        <Row>
+        <Row className="bottom-container">
           {/* Верхняя левая часть */}
-          <Col md={6}>
+          <Col md={6}className="border-0" style={{ paddingLeft: '0px', paddingRight: '0px', marginBottom: '20px' }}>
             <img
               src={process.env.PUBLIC_URL + '/images/политех.jpg'}
               alt="Фото 1"
@@ -38,7 +38,7 @@ function AboutMeBlock() {
             />
           </Col>
           {/* Верхняя правая часть */}
-          <Col md={6}>
+          <Col md={6}className="border-0" style={{ paddingLeft: '0px', paddingRight: '0px', marginBottom: '20px' }}>
             <img
               src={process.env.PUBLIC_URL + '/images/академия.jpg'}
               alt="Фото 2"
@@ -46,15 +46,15 @@ function AboutMeBlock() {
             />
           </Col>
           {/* Нижняя левая часть */}
-          <Col md={6}>
+          <Col md={6}className="border-0" style={{ paddingLeft: '0px', paddingRight: '0px', marginBottom: '20px' }}>
             <Card.Text>
-            Учусь в АлтГТУ им. И. И. Ползунова на 3 курсе по специальности приклодная информатика в экономике 
+              Учусь в АлтГТУ им. И. И. Ползунова на 3 курсе по специальности приклодная информатика в экономике 
             </Card.Text>
           </Col>
           {/* Нижняя правая часть */}
-          <Col md={6}>
+          <Col md={6}className="border-0" style={{ paddingLeft: '0px', paddingRight: '0px', marginBottom: '20px' }}>
             <Card.Text>
-            Работаю в КГБПОУ “Алтайская академия гостеприимства ” преподавателем программирования. Обычно веду пары у 3 и 4 курса
+              Работаю в КГБПОУ “Алтайская академия гостеприимства ” преподавателем программирования. Обычно веду пары у 3 и 4 курса
             </Card.Text>
           </Col>
         </Row>

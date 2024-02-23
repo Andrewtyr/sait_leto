@@ -8,6 +8,7 @@ import GalleryPage from './pages/GalleryPage/GalleryPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/global-styles.scss';
 
 function App() {
   return (

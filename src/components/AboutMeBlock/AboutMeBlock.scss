@@ -1,4 +1,47 @@
+// Ваши стили
 .carousel-container {
-    margin-top: 700px; // Задаем отступ сверху
-    text-align: center; // Выравниваем по центру
+    margin-top: 700px;
+    text-align: center;
   }
+  
+
+.custom-title {
+    font-size: 40px; /* Подставьте желаемый размер шрифта для заголовка */
+    font-style: italic; /* Курсив для заголовка */
+    margin-bottom: 20px !important; /* Задайте желаемое расстояние снизу */
+  }
+  
+.card-text {
+    font-size: 30px; /* Подставьте желаемый размер шрифта */
+    font-style: italic;
+  }
+  /* AboutMeBlock.scss */
+.container-row {
+    margin-top: 20px; /* Задайте желаемый отступ сверху */
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  .top-container {
+    margin-bottom: 50px; /* Задаем отступ снизу для верхнего контейнера */
+  }
+  .top-container {
+    margin-bottom: 50px; // Вы можете настроить величину отступа по вашему усмотрению
+  }
+  
+  .bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .bottom-container .border-0 {
+    width: 48%; // Установите желаемую ширину, оставив небольшой отступ между элементами
+    margin-bottom: 20px;
+  }
+  
+  .img-fluid {
+    width: 100%; // Сделайте изображения 100% по ширине родительского контейнера
+  }
+  
