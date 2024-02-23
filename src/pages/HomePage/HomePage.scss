@@ -14,9 +14,25 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-.bg-custom-gray {
-  background-color: #F8F8F8 !important;
-}
+
+
 .bg-custom-white {
   background-color: #ffffff !important;
+}
+// HomePage.scss
+
+
+
+// HomePage.scss
+.bg-custom-gray {
+  background-color: rgba(164, 163, 163, 0.25) !important;
+  height: 400px;
+}
+
+// Добавим стили для мобильных устройств
+@media (max-width: 767px) {
+  .bg-custom-gray {
+    background-color: transparent !important;
+    height: auto;
+  }
 }

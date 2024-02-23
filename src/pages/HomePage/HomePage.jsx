@@ -19,9 +19,9 @@ function HomePage() {
         </Col>
       </Row>
 
-      {/* Контейнер для слайдера с пользовательским серым фоном */}
-      <Row>
-        <Col className="bg-custom-gray">
+      {/* Увеличенный отступ между навигацией и слайдером */}
+      <Row className="mt-3">
+        <Col xs={12} className="bg-custom-gray d-flex justify-content-center align-items-center">
           <MySlider />
         </Col>
       </Row>

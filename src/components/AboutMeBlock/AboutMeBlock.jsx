@@ -1,15 +1,63 @@
 // components/AboutMeBlock/AboutMeBlock.jsx
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './AboutMeBlock.scss';
+
 function AboutMeBlock() {
   return (
     <Card>
       <Card.Body>
-        <Card.Title>О мене</Card.Title>
-        <Card.Text>
-          {/* Ваш текст о себе */}
-        </Card.Text>
+        <Card.Title className="text-center">Обо мне</Card.Title>
+        <Row>
+          {/* Левый контейнер с картинкой */}
+          <Col md={6}>
+            <img
+              src={process.env.PUBLIC_URL + '/images/моя фотка.png'}
+              alt="Картинка"
+              className="img-fluid"
+            />
+          </Col>
+          {/* Правый контейнер с текстом */}
+          <Col md={6}>
+            <Card.Text>
+              Учусь в политехе, пытаюсь делать практику, смотрю сериалы, читаю книги, пишу разные заметки о том что прийдет в голову, и этот сайт поможет узнать меня немного лучше, здесь я собрал то что мне нравится и кое-какие мои мысли, ну и галерею любимых фото и  просто обоев на рабочий стол, а также оставил способ связаться со мной 
+            </Card.Text>
+          </Col>
+        </Row>
+
+        {/* Контейнер с 2 фотографиями сверху и 2 текстами снизу */}
+        <Row>
+          {/* Верхняя левая часть */}
+          <Col md={6}>
+            <img
+              src={process.env.PUBLIC_URL + '/images/политех.jpg'}
+              alt="Фото 1"
+              className="img-fluid"
+            />
+          </Col>
+          {/* Верхняя правая часть */}
+          <Col md={6}>
+            <img
+              src={process.env.PUBLIC_URL + '/images/академия.jpg'}
+              alt="Фото 2"
+              className="img-fluid"
+            />
+          </Col>
+          {/* Нижняя левая часть */}
+          <Col md={6}>
+            <Card.Text>
+            Учусь в АлтГТУ им. И. И. Ползунова на 3 курсе по специальности приклодная информатика в экономике 
+            </Card.Text>
+          </Col>
+          {/* Нижняя правая часть */}
+          <Col md={6}>
+            <Card.Text>
+            Работаю в КГБПОУ “Алтайская академия гостеприимства ” преподавателем программирования. Обычно веду пары у 3 и 4 курса
+            </Card.Text>
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
   );
