@@ -1,0 +1,22 @@
+// HomePage.scss
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #000000;  /* цвет фона */
+  color: #FFFFFF;  /* цвет текста */
+}
+
+.homepage-container {
+  width: 1440px;
+  height: 2762px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.bg-custom-gray {
+  background-color: #F8F8F8 !important;
+}
+.bg-custom-white {
+  background-color: #ffffff !important;
+}

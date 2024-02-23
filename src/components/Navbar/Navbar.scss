@@ -1,0 +1,22 @@
+// components/Navbar/Navbar.scss
+
+.custom-navbar {
+  padding: 10px;
+
+  .nav-link {
+    margin-right: 30px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.bg-white {
+    background-color: #ffffff; // Белый цвет фона
+  }
+
+  .ml-auto {
+    margin-left: auto; // Стиль для смещения вправо
+  }
+}

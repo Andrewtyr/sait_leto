@@ -4,6 +4,6 @@ const { override, addWebpackAlias } = require('customize-cra');
 
 module.exports = override(
   addWebpackAlias({
-    'styles': require('path').resolve(__dirname, 'src/styles/'),
+    'react-dom': '@hot-loader/react-dom',
   })
 );

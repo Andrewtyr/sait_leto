@@ -1,26 +1,27 @@
-// src/App.js
-
+// App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import NotesPage from './pages/NotesPage';
-import GalleryPage from './pages/GalleryPage';
-import FavoritesPage from './pages/FavoritesPage';
-import ContactPage from './pages/ContactPage';
-import Navigation from './components/Navigation';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import HomePage from './pages/HomePage/HomePage';
+import NotesPage from './pages/NotesPage/NotesPage';
+import GalleryPage from './pages/GalleryPage/GalleryPage';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
+import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
-      <Navigation />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/notes" component={NotesPage} />
-        <Route path="/gallery" component={GalleryPage} />
-        <Route path="/favorites" component={FavoritesPage} />
-        <Route path="/contact" component={ContactPage} />
-      </Switch>
-    </Router>
+    <Container>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/notes" element={<NotesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+        </Routes>
+      </Router>
+    </Container>
   );
 }
 
