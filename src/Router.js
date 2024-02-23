@@ -7,12 +7,10 @@ import NotesPage from './pages/NotesPage';
 import GalleryPage from './pages/GalleryPage';
 import FavoritesPage from './pages/FavoritesPage';
 import ContactPage from './pages/ContactPage';
-import Navigation from './components/Navigation';
 
 function App() {
   return (
     <Router>
-      <Navigation />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/notes" component={NotesPage} />
