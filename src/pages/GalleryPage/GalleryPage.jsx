@@ -20,10 +20,10 @@ function GalleryPage() {
 
       {/* Увеличенный отступ между навигацией и галереей */}
       <Row className="mt-3">
-        <Col className="d-flex justify-content-center align-items-center">
-          <Gallery />
+        <Col>
+            <Gallery />
         </Col>
-      </Row>
+        </Row>
 
       {/* Контейнер для InfoBlock */}
       <Row className="mt-4">

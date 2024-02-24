@@ -16,7 +16,8 @@ function Gallery() {
       {/* Контейнер для фотографий */}
       <Row className="photos-container">
         {/* Левый столбец */}
-        <Col xs={6} md={6} lg={6} style={{  marginBottom: '20px' }}>
+        <Col xs={12} md={6} lg={6} style={{  marginBottom: '20px' }}>
+
           <div className="photo-container" style={{  marginBottom: '20px' }}>
             <Image src={process.env.PUBLIC_URL + '/images/галлерея1.jpg'} alt="Photo 1" className="gallery-image" fluid />
           </div>
@@ -29,7 +30,7 @@ function Gallery() {
         </Col>
 
         {/* Правый столбец */}
-        <Col xs={6} md={6} lg={6}>
+        <Col xs={12} md={6} lg={6} style={{  marginBottom: '20px' }}>
           <div className="photo-container" style={{  marginBottom: '20px' }}>
             <Image src={process.env.PUBLIC_URL + '/images/галлерея1.jpg'} alt="Photo 4" className="gallery-image" fluid />
           </div>
