@@ -1,0 +1,30 @@
+// NotesPage.scss
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000000; /* цвет фона */
+    color: #ffffff; /* цвет текста */
+  }
+  
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .bg-custom-gray {
+    background-color: rgba(164, 163, 163, 0.25) !important;
+    height: 400px;
+    width: 100%; /* Ширина будет 100% от родительского контейнера */
+  }
+  
+  // Добавим стили для мобильных устройств
+  @media (max-width: 767px) {
+    .bg-custom-gray {
+      background-color: transparent !important;
+      height: auto;
+    }
+  }
+  

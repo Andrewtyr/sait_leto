@@ -22,7 +22,7 @@ function NotesPage() {
 
       {/* Увеличенный отступ между навигацией и слайдером */}
       <Row className="mt-3">
-        <Col className="bg-custom-gray d-flex justify-content-center align-items-center border-0 custom-slider-container">
+        <Col className="bg-custom-gray d-flex justify-content-center align-items-center border-0 custom-slider-container" style={{ paddingLeft: '0px', paddingRight: '0px', margin: '0px !important' }}>
           <MySlider />
         </Col>
       </Row>
@@ -33,7 +33,7 @@ function NotesPage() {
           <Notes />
         </Col>
       </Row>
-      
+
       {/* Контейнер для InfoBlock */}
       <Row className="mt-4">
         <Col className="border-0">
