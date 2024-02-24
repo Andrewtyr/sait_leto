@@ -1,3 +1,4 @@
+// ContactForm.jsx
 import React from 'react';
 import './ContactForm.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +8,7 @@ function ContactForm() {
   return (
     <div className="contact-form-container">
       {/* Контейнер для текста и иконок */}
-      <div className="container">
+      <div className="container contact-info-table">
         <table style={{ width: '100%', textAlign: 'center', marginBottom: '50px' }}>
           <tbody>
             <tr>
@@ -31,12 +32,19 @@ function ContactForm() {
       </div>
 
       {/* Контейнер для фото */}
+      {/* Контейнер для фото */}
       <div className="container">
         <p style={{ textAlign: 'center' }}>
-          <img src={process.env.PUBLIC_URL + '/images/контакты.png'} alt="Фото" />
+          <img
+            src={process.env.PUBLIC_URL + '/images/контакты.png'}
+            alt="Фото"
+            className="contact-image"
+            style={{ maxWidth: '100%', maxHeight: '300px', height: '400px', borderRadius: '10px' }}
+          />
         </p>
       </div>
-    </div>
+      </div>
+
   );
 }
 

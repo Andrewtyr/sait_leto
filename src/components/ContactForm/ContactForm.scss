@@ -1,19 +1,25 @@
+// ContactForm.scss
+
 .contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 400px;
 }
 
 .text-container {
   margin-bottom: 20px;
-  text-align: left; /* Выравниваем текст по левому краю */
+  text-align: left;
 }
 
 .text-icon-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Выравниваем элементы по левому краю */
+  align-items: flex-start;
   margin-bottom: 20px;
 
   .icons {
@@ -23,39 +29,30 @@
     .vk-icon,
     .telegram-icon {
       font-size: 24px;
-      color: #0077B5; /* Цвет для ВКонтакте */
+      color: #0077B5;
     }
 
     .telegram-icon {
-      color: #0088cc; /* Цвет для Телеграма */
+      color: #0088cc;
     }
   }
 }
 
-.photo-container img {
+.contact-info-table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form-container img {
   max-width: 100%;
-  max-height: 400px; /* Установите максимальную высоту по вашему усмотрению */
   height: auto;
-  border-radius: 10px;
 }
-.container img {
-  max-width: 100%;
-  max-height: 250px; /* Установите желаемую максимальную высоту */
-  object-fit: cover; /* Скрыть часть изображения, которая не помещается */
-  border-radius: 10px;
-}
-.contact-form-container {
-  width: 100%; /* Ширина 100% от родительского контейнера */
-  max-width: 1000px; /* Максимальная ширина контейнера */
-  margin: 0 auto; /* Центрирование по горизонтали */
-  height: 400px; /* Задайте желаемую высоту контейнера */
-  /* Другие стили по необходимости */
-}
+
 .container {
   text-align: left;
   margin-bottom: 20px;
 
   p {
-    margin: 0; /* Убираем отступы внутри контейнера */
+    margin: 0;
   }
 }

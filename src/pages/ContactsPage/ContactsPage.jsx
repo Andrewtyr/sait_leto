@@ -26,7 +26,7 @@ function ContactsPage() {
       </Row>
       {/* Последний контейнер для мобильной версии */}
       <Row className="d-md-none mt-4">
-        <Col className="border-0" style={{ marginTop: '250px' }}>
+        <Col className="border-0" style={{ marginTop: '310px' }}>
           {/* Ваш последний контейнер для мобильной версии */}
         </Col>
       </Row>
