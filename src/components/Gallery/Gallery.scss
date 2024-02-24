@@ -1,0 +1,44 @@
+// components/Gallery/Gallery.scss
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение между элементами */
+    margin: 0 -20px; /* Увеличим отступы между столбцами */
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 300px; /* Ограничиваем максимальную ширину контейнера с фотографией */
+    margin: 50px 20px; /* Увеличим отступы между контейнерами с фотографиями и снизу */
+    padding: 10px; /* Увеличим отступы вокруг фотографии (border-radius не обеспечивает пространство для тени) */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавим тень для обтекаемости фотографии */
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
