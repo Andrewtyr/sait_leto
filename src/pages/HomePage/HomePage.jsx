@@ -9,8 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './HomePage.scss';
 
-
-
 function HomePage() {
   return (
     <Container fluid className="main-container">
@@ -23,10 +21,12 @@ function HomePage() {
 
       {/* Увеличенный отступ между навигацией и слайдером */}
       <Row className="mt-3">
-        <Col className="bg-custom-gray d-flex justify-content-center align-items-center border-0 custom-slider-container" style={{ paddingLeft: '0px', paddingRight: '0px', margin: '0px !important' }}>
-          <MySlider   />
+        <Col className="custom-slider-container">
+          <MySlider />
         </Col>
       </Row>
+
+
 
       {/* Контейнер для AboutMeBlock */}
       <Row>

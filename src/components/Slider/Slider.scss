@@ -1,42 +1,46 @@
 // Slider.scss
 
-// Контейнер для слайдера
-.carousel-container {
-    width: 80%; // Задаем 100% ширины контейнера
-    max-width: 1200px; // Ограничиваем максимальную ширину контейнера
-    margin: 0 auto; // Выравниваем по центру
-  }
-  
-  // Стили для слайдера
-  .carousel {
-    width: 100%; // Задаем 100% ширины слайдера
-    max-width: 800px; // Ограничиваем максимальную ширину слайдера
-    margin: 0 auto; // Выравниваем по центру
-    height: 300px; // Задаем высоту слайдера
-    border-radius: 20px; // Задаем радиус скругления углов
-    overflow: hidden; // Обрезаем лишнее, чтобы скругление было видно
-    border: 15px solid rgb(255, 255, 255); // Граница слайдера, можно изменить цвет
-  }
+.custom-slider-container {
+  background-color: rgba(123, 123, 123, 0.25) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  height: 400px;
+}
 
-  
-  // Стили для внутреннего контейнера слайдера
-  .carousel-inner {
-    height: 100%; // Заполняем 100% высоты внутреннего контейнера
-    border-radius: 20px; // Задаем радиус скругления углов внутреннего контейнера
-  }
-  
-  // Стили для каждого слайда
-  .carousel-item {
-    height: 100%; // Заполняем 100% высоты каждого слайда
-    border-radius: 20px; // Задаем радиус скругления углов каждого слайда
-  }
-  
-  // Стили для изображения внутри слайда
-  .carousel-item img {
-    width: 100%; // Заполняем 100% ширины изображения
-    height: 100%; // Заполняем 100% высоты изображения
-    object-fit: cover; // Сохраняем пропорции изображения и обрезаем, чтобы оно полностью покрывало слайд
-    border-radius: 20px; // Задаем радиус скругления углов для изображения
-    border: 2px solid gray; // Граница изображения, можно изменить цвет
-  }
-  
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(164, 163, 163, 0.25);
+  padding: 20px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 280px; // Увеличьте высоту слайдера
+  border-radius: 20px;
+  overflow: hidden;
+  border: 15px solid rgb(255, 255, 255);
+}
+
+.carousel-inner {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.carousel-item {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid gray;
+}

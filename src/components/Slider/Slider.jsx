@@ -8,28 +8,28 @@ function Slider() {
     <Carousel>
       <Carousel.Item>
         <img
-          className="carousel-item-img" // Добавьте класс carousel-item-img
+          className="carousel-item-img"
           src={process.env.PUBLIC_URL + '/images/слайд1.jpg'}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="carousel-item-img" // Добавьте класс carousel-item-img
+          className="carousel-item-img"
           src={process.env.PUBLIC_URL + '/images/слайд2.jpg'}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="carousel-item-img" // Добавьте класс carousel-item-img
+          className="carousel-item-img"
           src={process.env.PUBLIC_URL + '/images/слайд3.jpg'}
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="carousel-item-img" // Добавьте класс carousel-item-img
+          className="carousel-item-img"
           src={process.env.PUBLIC_URL + '/images/слайд4.png'}
           alt="Fourth slide"
         />
