@@ -30,7 +30,7 @@ function Slider() {
       <Carousel.Item>
         <img
           className="carousel-item-img" // Добавьте класс carousel-item-img
-          src={process.env.PUBLIC_URL + '/images/слайд4.jpg'}
+          src={process.env.PUBLIC_URL + '/images/слайд4.png'}
           alt="Fourth slide"
         />
       </Carousel.Item>

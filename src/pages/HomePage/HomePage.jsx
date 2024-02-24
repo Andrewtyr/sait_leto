@@ -34,7 +34,7 @@ function HomePage() {
       </Row>
 
       {/* Контейнер для InfoBlock */}
-      <Row>
+      <Row className="mt-4">
         <Col className="border-0">
           <InfoBlock />
         </Col>
@@ -46,3 +46,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

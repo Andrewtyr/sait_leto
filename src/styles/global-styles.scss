@@ -1,9 +1,18 @@
-// global-styles.scss
+
+  // global-styles.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
-    background-color: white; // Установка белого фона для всего приложения
-    font-family: 'Inter', sans-serif; // Установка шрифта Inter для всего приложения
+    background-color: white;
+    font-family: 'Inter', sans-serif;
     border: 0;
-  }
+    
+    // Общий размер шрифта для всех устройств
+    font-size: 16px;
+
+    // Медиа-запрос для мобильных устройств
+    @media (max-width: 767px) {
+        font-size: 12px; // Размер шрифта для мобильных устройств
+    }
+}
