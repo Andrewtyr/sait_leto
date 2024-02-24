@@ -2,9 +2,8 @@
 import React from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import MySlider from '../../components/Slider/Slider';
-import AboutMeBlock from '../../components/AboutMeBlock/AboutMeBlock';
-import InfoBlock from '../../components/InfoBlock/InfoBlock';
-import Notes from '../../components/Notes/Notes'; // Импортируем компонент Notes
+import InfoBlock from '../../components/InfoBlock/InfoBlock'; // Подставьте правильный путь
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -27,10 +26,10 @@ function NotesPage() {
         </Col>
       </Row>
 
-      {/* Добавляем компонент Notes */}
-      <Row>
+      {/* Контейнер для InfoBlock */}
+      <Row className="mt-4">
         <Col className="border-0">
-          <Notes />
+          <InfoBlock />
         </Col>
       </Row>
 

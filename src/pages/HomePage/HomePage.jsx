@@ -9,6 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './HomePage.scss';
 
+
+
 function HomePage() {
   return (
     <Container fluid className="main-container">

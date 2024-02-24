@@ -2,6 +2,8 @@
 import React from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 
+
+
 function ContactsPage() {
   return (
     <div>
