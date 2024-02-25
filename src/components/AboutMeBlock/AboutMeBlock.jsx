@@ -9,7 +9,7 @@ import './AboutMeBlock.scss';
 function AboutMeBlock() {
   return (
     <Card className="border-0">
-      <Card.Body>
+      <Card.Body style={{ paddingLeft: 0, paddingRight: 0 }} >
         <Card.Title className="text-center" style={{ fontSize: '40px', fontStyle: 'italic', marginBottom: '50px' }}>Обо мне</Card.Title>        
         <Row className="top-container">
           {/* Левый контейнер с картинкой */}
