@@ -1,0 +1,52 @@
+/* Добавьте этот стиль, чтобы текст внутри контейнера занимал все доступное пространство */
+.content-container.textt {
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    overflow: hidden; /* Предотвращаем проблемы с переполнением контента */
+}
+
+/* Если вы хотите, чтобы изображения в контейнерах имели разные стили, вы можете добавить следующие стили */
+.content-container.img {
+    height: 300px; /* Задайте фиксированную высоту по вашему усмотрению */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    overflow: hidden; /* Предотвращаем проблемы с переполнением контента */
+}
+
+.content-container.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.favorites-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left-container,
+.top-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+/* Добавьте этот стиль для обеспечения отступов и управления размерами на мобильных устройствах */
+@media (max-width: 767px) {
+    .favorites-container {
+      flex-direction: column;
+    }
+  
+    .top-left-container,
+    .top-right-container {
+      width: 100%;
+    }
+  
+    .content-container.textt,
+    .content-container.img {
+      height: auto;
+      margin-bottom: 10px; /* Измените отступ в соответствии с вашими предпочтениями */
+    }
+  }
+  
