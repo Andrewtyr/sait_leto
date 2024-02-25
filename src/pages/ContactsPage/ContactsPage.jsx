@@ -1,5 +1,5 @@
 // pages/ContactsPage/ContactsPage.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col';
 import './ContactsPage.scss';
 
 function ContactsPage() {
+  useEffect(() => {
+    document.title = 'Контакты'; 
+  }, []);
+
   return (
     <Container fluid className="main-container">
       {/* Навигация */}

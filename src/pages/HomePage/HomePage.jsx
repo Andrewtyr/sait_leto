@@ -1,5 +1,5 @@
 // pages/HomePage/HomePage.jsx
-import React from 'react';
+import React,{ useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import MySlider from '../../components/Slider/Slider';
 import AboutMeBlock from '../../components/AboutMeBlock/AboutMeBlock';
@@ -10,6 +10,10 @@ import Col from 'react-bootstrap/Col';
 import './HomePage.scss';
 
 function HomePage() {
+  useEffect(() => {
+    document.title = 'Главная'; 
+  }, []);
+
   return (
     <Container fluid className="main-container">
       {/* Навигация */}

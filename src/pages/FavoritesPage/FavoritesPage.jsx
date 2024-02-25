@@ -1,5 +1,5 @@
 // pages/Favorites/Favorites.jsx
-import React from 'react';
+import React ,{ useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import Favorites from '../../components/Favorites/Favorites'; // Импортируйте компонент Favorites
@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col';
 import './FavoritesPage.scss'; // Подключите ваши стили
 
 function FavoritesPage() {
+    useEffect(() => {
+        document.title = 'Избранное'; 
+      }, []);
+    
   return (
     <Container fluid className="main-container">
       {/* Навигация */}

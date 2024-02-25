@@ -1,5 +1,5 @@
 // pages/NotesPage/NotesPage.jsx
-import React from 'react';
+import React,{ useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import MySlider from '../../components/Slider/Slider';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
@@ -11,6 +11,9 @@ import Col from 'react-bootstrap/Col';
 import './NotesPage.scss';
 
 function NotesPage() {
+  useEffect(() => {
+    document.title = 'Заметки'; 
+  }, []);
   return (
     <Container fluid className="main-container">
       {/* Навигация */}

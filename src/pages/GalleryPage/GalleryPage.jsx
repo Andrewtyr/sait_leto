@@ -1,5 +1,5 @@
 // pages/GalleryPage/GalleryPage.jsx
-import React from 'react';
+import React,{ useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import Gallery from '../../components/Gallery/Gallery';
 import Container from 'react-bootstrap/Container';
@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col';
 import './GalleryPage.scss';
 
 function GalleryPage() {
+  useEffect(() => {
+    document.title = 'Галлерея'; 
+  }, []);
+
   return (
     <Container fluid className="main-container">
       {/* Навигация */}

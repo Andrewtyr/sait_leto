@@ -1,64 +1,18 @@
-// components/Gallery/Gallery.scss
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.text {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.photos-container {
-    display: flex;
-    flex-wrap: wrap; /* Добавим обертывание для мобильных устройств */
-    justify-content: space-between;
-    margin: 0 -10px; /* Увеличим отступы между столбцами */
-}
-
-.column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .photo-container {
-    width: 100%;
-    max-width: 300px; /* Ограничиваем максимальную ширину контейнера с фотографией */
-    margin: 20px 10px; /* Уменьшим отступы между контейнерами с фотографиями и снизу для мобильных устройств */
+    width: 500px;
+    height: 272px; /* Задайте фиксированную высоту */
+    margin: 20px 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Обрежьте изображение в случае, если оно не соответствует фиксированной высоте */
+    box-sizing: border-box; /* Учтем границу в общих размерах */
+    border: 2px solid #ccc; /* Добавим границу */
 }
 
 .gallery-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-// Дополнительные стили для телефонов
-@media (max-width: 767px) {
-    .photos-container {
-        margin: 0; /* Убираем отступы между столбцами для мобильных устройств */
-    }
-}
-@media (max-width: 767px) {
-    .photos-container {
-        flex-direction: column; /* Изменяем направление flex-контейнера на колонку для мобильных устройств */
-        align-items: center; /* Выравниваем по центру */
-    }
-
-    .column {
-        flex: none; /* Отключаем гибкость, чтобы контейнеры не растягивались по ширине */
-        width: 100%; /* Занимаем всю ширину */
-        margin: 0; /* Убираем отступы */
-    }
+    width: 500px !important;
+    height: 240px !important;
+    object-fit: cover;
+  
 }
