@@ -18,10 +18,10 @@ function ContactForm() {
               </td>
               <td>
                 <div className="icons" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                  <a href="ссылка_на_вконтакте" target="_blank" rel="noopener noreferrer">
+                  <a href="https://vk.com/andrewtyrr" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faVk} className="vk-icon" style={{ fontSize: '50px' }} />
                   </a>
-                  <a href="ссылка_на_телеграм" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/Andrewtyrr" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faTelegram} className="telegram-icon" style={{ fontSize: '50px' }} />
                   </a>
                 </div>
