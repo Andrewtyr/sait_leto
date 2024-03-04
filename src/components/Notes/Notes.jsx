@@ -1,9 +1,9 @@
 import React from 'react';
-import './Notes.scss';  // Если вы позже добавите свои стили, включите их здесь
+import './Notes.scss';  
 
 function Notes() {
   return (
-    <div className="container notes-container"> {/* Используем Bootstrap классы */}
+    <div className="container notes-container"> 
       {/* Верхний контейнер */}
       <div className="row top-container">
         {/* Левая часть верхнего контейнера */}

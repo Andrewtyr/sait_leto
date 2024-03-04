@@ -31,7 +31,7 @@ function ContactForm() {
         </table>
       </div>
 
-      {/* Контейнер для фото */}
+      
       {/* Контейнер для фото */}
       <div className="container">
         <p style={{ textAlign: 'center' }}>

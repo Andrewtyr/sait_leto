@@ -3,8 +3,7 @@ import React,{ useEffect } from 'react';
 import MyNavbar from '../../components/Navbar/Navbar';
 import MySlider from '../../components/Slider/Slider';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
-import Notes from '../../components/Notes/Notes'; // Подставьте правильный путь
-
+import Notes from '../../components/Notes/Notes'; 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -46,7 +45,7 @@ function NotesPage() {
 
       
 
-      {/* Добавьте другие компоненты и контент, если необходимо */}
+      
     </Container>
   );
 }

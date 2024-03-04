@@ -6,7 +6,7 @@ import Favorites from '../../components/Favorites/Favorites'; // Импорти�
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './FavoritesPage.scss'; // Подключите ваши стили
+import './FavoritesPage.scss'; 
 
 function FavoritesPage() {
     useEffect(() => {
@@ -35,7 +35,7 @@ function FavoritesPage() {
           <InfoBlock />
         </Col>
       </Row>
-      {/* Добавьте другие компоненты и контент, если необходимо */}
+      
     </Container>
   );
 }
